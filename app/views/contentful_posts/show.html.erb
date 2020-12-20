@@ -1,0 +1,19 @@
+<h1>Title - <%= @post.fields[:title] %></h1>
+
+<p> Image Url - <%= @post.fields[:photo].fields[:url] %></p>
+
+<h3> List Of Tags </h3>
+<ul>
+  <% @post.fields[:tags].each do |tag| %>
+    <li>
+      <%= tag.fields[:name]%>
+    </li>
+  <% end %>
+</ul>
+
+<h3> Content </h3>
+<p> <%= @post.fields[:content]%> </p>
+
+<% if @post.fields[:author] != nil %>
+  <p> Author Name - <%= @post.fields[:author].fields[:name] %></p>
+<% end %>
