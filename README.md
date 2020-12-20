@@ -5,20 +5,14 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - 2.6.6
 
-* System dependencies
+To run the code on your local
 
-* Configuration
+git clone https://github.com/alpitcoder/Nayan.git - to fetch code on local
 
-* Database creation
+bundle install - to install all the dependencies
 
-* Database initialization
+rails s - to run the code on local
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
